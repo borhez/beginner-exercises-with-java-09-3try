@@ -66,7 +66,7 @@ public class Server {
     private void removeClient(Client client) {
         clients.remove(client);
         num--;
-        System.out.println("The user has left the chat.");
+        System.out.println("Minus one user. (Someone has left the chat.");
     }
 
     private void stop() {
