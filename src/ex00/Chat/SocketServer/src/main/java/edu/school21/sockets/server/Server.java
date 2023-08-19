@@ -45,7 +45,7 @@ public class Server {
                 if (reader.hasNextLine()) {
                     message = reader.nextLine().trim();
                     if (!"signUp".equalsIgnoreCase(message)) {
-                        throw new RuntimeException("Wrong input. Try enter \"signUp\"");
+                        throw new RuntimeException("Wrong! Type: \"signUp\"");
                     }
                 }
                 writer.println("Enter username: ");
