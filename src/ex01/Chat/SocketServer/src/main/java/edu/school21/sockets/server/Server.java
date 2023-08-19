@@ -103,7 +103,7 @@ public class Server {
             writer.println("Hello from Server!");
 
             while (true) {
-                writer.println("Choose command: signUp, signIn, exit");
+                writer.println("Type: signUp, signIn, exit");
 
                 try {
                     if (reader.hasNextLine()) {
@@ -123,7 +123,7 @@ public class Server {
                                 break;
                             }
                             if (usersService.signIn(username, password)) {
-                                writer.println("Authorization successful!");
+//                                writer.println("Authorization successful!");
                                 System.out.println("Authorization successful for user: " + username);
                                 writer.println("Start messaging");
                                 talk();
@@ -190,7 +190,7 @@ public class Server {
 
         private void exitChat() {
             try {
-                writer.println("exit");
+                writer.println("You have left the chat.");
                 removeClient(this);
                 reader.close();
                 writer.close();

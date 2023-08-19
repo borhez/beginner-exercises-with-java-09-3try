@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
         if (args.length != 1 || !args[0].startsWith("--server-port=")) {
-            System.err.println("Specify the server port using --server-port=");
+            System.err.println("Type: --server-port=8081");
             System.exit(-1);
         }
 
